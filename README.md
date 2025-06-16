@@ -65,7 +65,7 @@
 
 ### Requirements
 - Java 17+
-- Maven or Gradle (for building)
+- Maven (for building)
 
 ### Clone the Repository
 ```bash
@@ -74,23 +74,7 @@ cd msgQ
 ```
 
 ### Run
-You can use your own `Demo` method or CLI to interact with topics, producers, and consumers.
-
----
-
-## 🔮 Example Usage
-
-```java
-// Create Topic
-topicService.createTopic("orders", 3);
-
-// Producer publishes message
-producer.publish("orders", new Message("orderId-123", "Order placed"));
-
-// Consumer subscribes and consumes
-consumerService.subscribe("consumer1", "orders");
-Map<Integer, List<Message>> messages = consumerService.consume("consumer1", "orders");
-```
+You can use `Demo` class interact with topics, producers, and consumers.
 
 ---
 
