@@ -46,12 +46,12 @@
                       |      (3 partitions)      |
                       +--------------------------+
                         |         |         |
-                        v         v         v
+                        ▼         ▼         ▼
                       [P0]      [P1]      [P2]
-                       |         |         |
-     ┌─────────────────┘         |         └─────────────────┐
-     ▼                           ▼                           ▼
-[Consumer A]               [Consumer B]                 [Consumer C]
+                        |         |         |
+      ┌─────────────────┘         |         └─────────────────┐
+      ▼                           ▼                           ▼
+[Consumer A]                [Consumer B]                 [Consumer C]
 (Offset per P0)            (Offset per P1)              (Offset per P2)
 ```
 
